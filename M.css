@@ -1,0 +1,211 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: rgb(162, 194, 241); /* Dark gray background */
+    color: rgb(160, 152, 152); /* Light gray text */
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: rgb(157, 170, 190); /* Slightly lighter gray */
+    color: rgb(39, 22, 16); /* Vibrant orange-red */
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: rgb(112, 159, 180); /* Light gray for the main title */
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: rgb(53, 50, 50); /* Vibrant orange-red for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(54, 50, 50); /* Light gray on hover */
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    background-color: rgb(136, 153, 180); /* Slightly lighter gray for section background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    color: rgb(48, 171, 202); /* Vibrant orange-red headings */
+    margin-bottom: 1rem;
+  }
+  
+  p, ul, li {
+    margin-bottom: 1rem;
+    color: rgb(238, 238, 238); /* Light gray text */
+  }
+  
+  a {
+    color: rgb(214, 90, 49); /* Orange-red for project links */
+  }
+  
+  a:hover {
+    color: rgb(238, 238, 238); /* Light gray hover effect */
+  }
+
+  /* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .project-card {
+    background-color: rgb(57, 62, 70); /* Slightly lighter gray for card background */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-info {
+    padding: 1rem;
+  }
+  
+  .project-info h3 {
+    color: rgb(214, 90, 49); /* Vibrant orange-red for project title */
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-info p {
+    color: rgb(238, 238, 238); /* Light gray text */
+    margin-bottom: 1rem;
+  }
+  
+  .project-info .btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: rgb(214, 90, 49); /* Vibrant orange-red button */
+    color: rgb(238, 238, 238); /* Light gray text */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-info .btn:hover {
+    background-color: rgb(238, 238, 238); /* Light gray on hover */
+    color: rgb(34, 40, 49); /* Dark text on hover */
+  }
+  
+  
+  /* Skills Section Styles */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid layout */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-items: center;
+  }
+  
+  .skill {
+    text-align: center;
+  }
+  
+  .skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+  
+  .skill img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .skill p {
+    color: rgb(238, 238, 238); /* Light gray text */
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    color: rgb(238, 238, 238); /* Light gray label */
+  }
+  
+  input, textarea {
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: rgb(57, 62, 70); /* Slightly lighter gray for input background */
+    color: rgb(238, 238, 238); /* Light gray text inside input */
+    border: 1px solid rgb(34, 40, 49); /* Dark gray border */
+    border-radius: 4px;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: rgb(214, 90, 49); /* Orange-red border on focus */
+  }
+  
+  button {
+    padding: 0.7rem;
+    border: none;
+    background-color: rgb(214, 90, 49); /* Vibrant orange-red button */
+    color: rgb(238, 238, 238); /* Light gray text */
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: rgb(238, 238, 238); /* Light gray for hover */
+    color: rgb(34, 40, 49); /* Dark gray text on hover */
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: rgb(57, 62, 70); /* Slightly lighter gray for footer */
+    color: rgb(238, 238, 238); /* Light gray text */
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
